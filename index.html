@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <video id="videoQuack" controls loop style="display: none;">
         <source src="quack.mp4" type="video/mp4">
     </video>
@@ -57,42 +56,36 @@
                     <a target="_blank" class="botao" onclick="quackQuack()">
                         <p id="quackButton">Quack!</p>
                     </a>
-					
-
-					
-					
                 </div>
             </div>
         </div>
-
         <div class="container-fluid social">
             <div class="row">
                 <div class="col">
-                        <a href="https://www.instagram.com/gilbertomrls/" target="_blank"><i class="bi bi-instagram" style="font-size: 2rem;" title="Instagram"></i></a>
+                    <a href="https://www.instagram.com/gilbertomrls/" target="_blank">
+                        <i class="bi bi-instagram" style="font-size: 2rem;" title="Instagram"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </main>
     <script src="js/bootstrap.js"></script>
-
     <script>
-function quackQuack() {
-    var video = document.getElementById("videoQuack");
-    var quackButton = document.getElementById("quackButton");
+        function quackQuack() {
+            var video = document.getElementById("videoQuack");
+            var quackButton = document.getElementById("quackButton");
 
-    if (video.paused) {
-        video.play();
-        document.body.style.backgroundImage = "url('quack.webm')";
-        quackButton.innerText = "🦆";
-    } else {
-        video.pause();
-        document.body.style.backgroundImage = "none";
-        quackButton.innerText = "Quack!";
-    }
-	
-	video.volume = 0.25;
-}
+            if (video.paused) {
+                video.play();
+                document.body.style.backgroundImage = "url('quack.webm')";
+                quackButton.innerText = "🦆";
+            } else {
+                video.pause();
+                document.body.style.backgroundImage = "none";
+                quackButton.innerText = "Quack!";
+            }
+            video.volume = 0.25;
+        }
     </script>
-
 </body>
 </html>
