@@ -3,7 +3,7 @@
 
 The application consists of a simple link tree for personal use.
 
-## 🖼 Preview
+## 🤳 Preview
 <p> <img alt="Web" src="https://github.com/eumorales/eumorales/blob/main/preview/linktree-web.png" /></p>
 
 ###### https://gilbertomorales.com
